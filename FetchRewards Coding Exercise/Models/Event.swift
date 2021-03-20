@@ -7,23 +7,28 @@
 
 import Foundation
 
-struct TopLevelJSON: Codable {
+struct TopLevelJSON: Decodable {
     let events: [Event]
 }
 
-struct Event: Codable {
+struct Event: Decodable {
     let title: String
     let location: Venue
     let time: String
+    let performers: [Performer]
     
     enum CodingKeys: String, CodingKey {
         case title = "short_title"
-        case location
-        case time = "datetime_local"
+        case location = "venue"
+        case time = "datetime_utc"
+        case performers
     }
 }
 
-struct Venue: Codable {
+struct Venue: Decodable {
     let city: String
     let state: String
+}
+struct Performer: Decodable {
+    let image: String
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281B2DBC260441BE0022458A /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B2DBB260441BE0022458A /* ErrorExtension.swift */; };
+		281B2DBF260442C80022458A /* EventError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281B2DBE260442C80022458A /* EventError.swift */; };
 		28CE517926012C4200109E5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE517826012C4200109E5A /* AppDelegate.swift */; };
 		28CE517B26012C4200109E5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE517A26012C4200109E5A /* SceneDelegate.swift */; };
 		28CE518026012C4200109E5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CE517E26012C4200109E5A /* Main.storyboard */; };
@@ -15,9 +17,12 @@
 		28CE519226012CBD00109E5A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE519126012CBD00109E5A /* Event.swift */; };
 		28CE51C62602728300109E5A /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE51C52602728300109E5A /* EventTableViewCell.swift */; };
 		28CE51EF26040C0A00109E5A /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE51EE26040C0A00109E5A /* EventTableViewController.swift */; };
+		28CE51F22604229E00109E5A /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CE51F12604229E00109E5A /* EventController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		281B2DBB260441BE0022458A /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		281B2DBE260442C80022458A /* EventError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventError.swift; sourceTree = "<group>"; };
 		28CE517526012C4200109E5A /* FetchRewards Coding Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FetchRewards Coding Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CE517826012C4200109E5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28CE517A26012C4200109E5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		28CE519126012CBD00109E5A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		28CE51C52602728300109E5A /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		28CE51EE26040C0A00109E5A /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		28CE51F12604229E00109E5A /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281B2DBA2604419E0022458A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				281B2DBB260441BE0022458A /* ErrorExtension.swift */,
+				281B2DBE260442C80022458A /* EventError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		28CE516C26012C4200109E5A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +75,7 @@
 		28CE517726012C4200109E5A /* FetchRewards Coding Exercise */ = {
 			isa = PBXGroup;
 			children = (
+				281B2DBA2604419E0022458A /* Helper */,
 				28CE518E26012C7D00109E5A /* Models */,
 				28CE518F26012C9000109E5A /* Views */,
 				28CE519026012C9A00109E5A /* Controllers */,
@@ -125,6 +141,7 @@
 		28CE51CA2602739E00109E5A /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				28CE51F12604229E00109E5A /* EventController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -199,11 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CE51F22604229E00109E5A /* EventController.swift in Sources */,
 				28CE519226012CBD00109E5A /* Event.swift in Sources */,
+				281B2DBC260441BE0022458A /* ErrorExtension.swift in Sources */,
 				28CE517926012C4200109E5A /* AppDelegate.swift in Sources */,
 				28CE51C62602728300109E5A /* EventTableViewCell.swift in Sources */,
 				28CE517B26012C4200109E5A /* SceneDelegate.swift in Sources */,
 				28CE51EF26040C0A00109E5A /* EventTableViewController.swift in Sources */,
+				281B2DBF260442C80022458A /* EventError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
