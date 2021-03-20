@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Npm-o6-zRm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -22,6 +22,9 @@
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uny-cW-S5f">
                                         <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Npm-o6-zRm" id="ArL-HE-do7"/>
+                                        </connections>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP4-B5-8Tx">
                                         <rect key="frame" x="366" y="0.0" width="48" height="56"/>
@@ -33,7 +36,7 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" id="PF2-Mo-hSg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="187" id="PF2-Mo-hSg" customClass="EventTableViewCell" customModule="FetchRewards_Coding_Exercise" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="187"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PF2-Mo-hSg" id="98o-bU-xOq">
@@ -114,10 +117,20 @@
                                             <constraint firstItem="Icr-5V-iDr" firstAttribute="height" secondItem="PF2-Mo-hSg" secondAttribute="height" multiplier="0.85" id="H6U-VY-2oF"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="cityStateLabel" destination="iTH-Zf-yyd" id="ol8-yZ-Bgv"/>
+                                            <outlet property="eventDateLabel" destination="FHw-IP-iSB" id="USS-Fb-BfW"/>
+                                            <outlet property="eventIcon" destination="jNK-Px-bHh" id="FPg-3F-Z0E"/>
+                                            <outlet property="eventTimeLabel" destination="FHw-IP-iSB" id="jWp-kK-3Tt"/>
+                                            <outlet property="eventTitleLabel" destination="Ips-jd-Ac6" id="bkd-SR-1Ng"/>
+                                            <outlet property="isFavoriteIcon" destination="f1X-Wi-E2Q" id="F0w-Bf-uMm"/>
                                             <segue destination="JQ6-e5-Zno" kind="show" id="VUQ-To-kT9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Npm-o6-zRm" id="Sa8-nW-NEd"/>
+                                    <outlet property="delegate" destination="Npm-o6-zRm" id="usa-wD-zLn"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Sj-cI-K4W"/>
