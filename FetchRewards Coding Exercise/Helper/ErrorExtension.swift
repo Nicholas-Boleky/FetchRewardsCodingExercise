@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+//Popup error for user
 extension UIViewController {
     func presentErrorToUser(localizedError: LocalizedError) {
         let alertController = UIAlertController(title: "ERROR", message: localizedError.errorDescription, preferredStyle: .actionSheet)
