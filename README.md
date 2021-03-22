@@ -25,7 +25,7 @@ The approach I took was MVC. With a small project like this the risk of running 
 I spent an embarassing ammount of time on this project. Aprox 8 hours in total. Some really small things ended up taking me longer than I would have hoped. The date formatting was a little new for me and probably took an hour in itself. I think I spent 30 minutes just trying to figure out how to make the status bar white instead of the black default. I think I took at least 45 minutes to sign up and get familiar with the API and run some test calls on postman. The logic with the favorite button took me some time to work out and even once I figured out how I wanted to do it I had to spend longer figuring out how to wire the UI up with it. The easiest bit was actually making the network calls since I have experience with this. 
 
 ## Code That Was Already Written
-Nothing was already written but I did reference previous projects and adapted the network call functions from them into this project. I also reused my error enums because I find them to be useful in communicating to the user what went wrong. 
+I did reference previous projects and adapted the network call functions from them into this project. I also reused my error enums/alert controller because I find them to be useful in communicating to the user some sense of what went wrong. 
 
 ## If I Had More Time
 * I really wanted to add XCUnit tests to this project but I honestly just ran out of time. If you like what I have done so far and you would like to see what I can do I will gladly take more time on this project. I had a lot of fun with it and adding unit testing would be really fulfilling. 
