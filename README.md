@@ -31,6 +31,7 @@ Nothing was already written but I did reference previous projects and adapted th
 * I really wanted to add XCUnit tests to this project but I honestly just ran out of time. If you like what I have done so far and you would like to see what I can do I will gladly take more time on this project. I had a lot of fun with it and adding unit testing would be really fulfilling. 
 * I would have rounded those dang corners on the UIImages...
 * I would have gone back and made the search functionality work while the user was typing instead of pushing enter. I promise I can do this I just noticed that specification a little too late. I would take me some time to think about how to use notifications still (if at all) but I enjoy thinking about those types of problems.
+* Swift has a new way to handle network calls using combine and I wanted to try that out here but I was too nervous. If I had more time I would work through it and implement it here.
 
 ## Final Thoughts
 * Please Please share your feedback with me. Even if you find my code doesnt meet your expectations for taking on an internship I would love to know why and what I can do to improve. I get very excited to hear feedback because I know I am new and I can always improve. Your input is really valuable to me. I hope to hear from you soon!
